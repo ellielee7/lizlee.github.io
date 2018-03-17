@@ -30,7 +30,7 @@ nav a:hover {
     color: #EF5850;
 }
 header .hero{
-text-align: center;
+  text-align: center;
   display:block;
   position: relative;
  }
@@ -47,6 +47,10 @@ header .hero img{
 
 header .hero p{
     font-family:'Montserrat', sans-serif;
+}
+main .work img{
+    vertical-align: text-top;
+
 }
 main img{
     height: 50px;
