@@ -29,6 +29,71 @@ nav a{
 nav a:hover {
     color: #EF5850;
 }
+
+.hero b{
+      color:#313131;
+      font-weight: bold;
+      -webkit-animation:colorchange 20s infinite alternate;
+
+
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+
+        color: blue;
+      }
+
+      10% {
+
+        color: #8e44ad;
+      }
+
+      20% {
+
+        color: #1abc9c;
+      }
+
+      30% {
+
+        color: #d35400;
+      }
+
+      40% {
+
+        color: blue;
+      }
+
+      50% {
+
+        color: #34495e;
+      }
+
+      60% {
+
+        color: blue;
+      }
+
+      70% {
+
+        color: #2980b9;
+      }
+      80% {
+
+        color: #f1c40f;
+      }
+
+      90% {
+
+        color: #2980b9;
+      }
+
+      100% {
+
+        color: pink;
+      }
+    }
+
 header .hero{
   text-align: center;
   display:block;
@@ -49,31 +114,43 @@ header .hero p{
     font-family:'Montserrat', sans-serif;
 }
 main .work img{
-    vertical-align: text-top;
+
 
 }
-main img{
+main .work{
     height: 50px;
-    margin-left: 200px;
     margin-top: 50px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main .projects{
+    margin-left: auto;
+    margin-right: auto;
+    width: 923px;
 }
 main .projects img{
-    height: 500px;
+    width: 923px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 main .projects h2{
     font-family: 'Merriweather', serif;
     font-weight: bold;
-    margin-left: 200px;
 }
 main .projects h4{
     font-family: 'Merriweather', serif;
     font-weight: lighter;
-    margin-left: 200px;
 }
 main .projects p{
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    position: relative;
+    /*position: relative;*/
+    text-align: right;
 }
 main .projects a{
     color: #EF5850;
@@ -81,10 +158,43 @@ main .projects a{
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
-    right: 50px;
+    /*right: 50px;*/
+    text-align: center;
 
 
 }
+footer {
+  background-color: #fafafa;
+  color: #333333;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  font-family:'Monserrat', sans-serif;
+}
+footer .socialmedia img{
+    height:20px;
+    width: auto;
+}
+footer p, footer nav ul {
+  font-size:12px;
+  font-weight:100;
+  text-align: left;
+  margin: 10px auto 0;
+}
+footer nav ul li {
+  list-style-type: none;
+  display: inline;
+
+}
+footer nav ul li a {
+  color:#333333;
+  text-decoration: none;
+}
+footer .right-footer-block {
+  background-color: transparent;
+}
+
 /* Google Fonts
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;*/
