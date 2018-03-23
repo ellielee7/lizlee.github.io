@@ -304,6 +304,7 @@ main .number{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
+    color: #333333;
 
 }
 .casestudyparagraph  b{
@@ -319,4 +320,34 @@ main .survey{
     margin-right: auto;
     margin-top: 50px;
     width: 700px;
+}
+main .userflow{
+    width: 960px;
+}
+main .sketch{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+main .prototype{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+main p{
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    color: #6d6d6d;
+    font-size: 15px;
+    font-weight: bold;
 }
