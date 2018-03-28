@@ -129,6 +129,7 @@ header .hero{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70px;
   width: 40%;
 
  }
@@ -155,8 +156,8 @@ main .work img{
 }
 main .work{
     height: 40px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    /*margin-bottom: 100px;*/
     display: block;
     margin-left: auto;
     margin-right: auto;
