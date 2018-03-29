@@ -154,10 +154,18 @@ main .work img{
 
 
 }
-main .work{
+main .mywork{
     height: 40px;
     margin-top: 200px;
     /*margin-bottom: 100px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main .work{
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -273,11 +281,12 @@ font-family: 'Montserrat', sans-serif;*/
     text-align: center;
     font-family: 'Monserrat', sans-serif;
     font-size: 30px;
+    margin-top: 50px;
 
 }
 
 #content p img{
-    width: 55%;
+    width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -296,6 +305,7 @@ main .number{
 }
 .casestudyparagraph{
     margin-top: 50px;
+
 }
 .casestudyparagraph p{
     text-align: left;
@@ -356,4 +366,49 @@ main p{
     color: #6d6d6d;
     font-size: 15px;
     font-weight: bold;
+}
+main .persona{
+    width: 230px;
+    display: inline-block;
+    margin: 50px 30px 0px;
+    padding: 10px;
+    position: relative;
+}
+main .personas-p{
+    background-color: #EDEDED;
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    margin: 0px 30px 50px;
+    padding: 10px;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 14px;
+    position: relative;
+    vertical-align: top;
+    line-height: 20px;
+}
+main .personas-p b{
+    font-size: 15px;
+}
+main .laineuserflow{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+main .lainewireframe{
+    margin-top: 50px;
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main .keepuserflow{
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
 }
