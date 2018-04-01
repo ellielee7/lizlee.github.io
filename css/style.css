@@ -190,7 +190,7 @@ main .work{
     width: 923px;
 }*/
 .project-preview img{
-    width: 923px;
+    width: 927px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -220,7 +220,7 @@ main .work{
     line-height: 1.5;
 }
  .project-preview a{
-    color: #EF5850;
+    color: black;
     font-family: 'Monserrat', sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -418,4 +418,73 @@ main .keepuserflow{
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
+}
+.project-preview{
+  position: relative;
+  /*width: 100%;*/
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FED933;
+}
+.overlay-1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F6E8E5;
+}
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #5ACBCB;
+}
+
+
+.project-preview:hover .overlay{
+  opacity: 0.9;
+}
+.project-preview:hover .overlay-1{
+  opacity: 0.9;
+}
+.project-preview:hover .overlay-2{
+  opacity: 0.9;
+}
+
+.text{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
 }
