@@ -235,14 +235,14 @@ main .work{
     margin-right: auto;
 }
 .project-preview{
-    padding: 30px;
+    /*padding: 5px;*/
     margin-top: -20px;
     margin-bottom: 150px;
-    border-radius: 0 0 4px 4px;
+    /*border-radius: 0 0 4px 4px;*/
 }
 .section{
-    max-width: 923px;
-    margin: 0 auto 75px;
+    max-width: 927px;
+    margin: 0 auto 30px;
 }
 .span_4_of_12{
     width: 30.13%;
@@ -313,7 +313,7 @@ main .work{
   /*overflow: hidden;*/
   z-index: 0;
   font-family:'Karla', sans-serif;
-  margin-top: 150px;
+  margin-top: 80px;
   padding: 10px;
   text-align: center;
 }
