@@ -44,6 +44,19 @@
     z-index: -1;
 
 }
+.contactlines{
+    position: relative;
+}
+.contactlines:before {
+    background-color: #D6D6D6;
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+
+}
 
 .container {
     margin: 0 auto;
@@ -263,6 +276,16 @@ main .aboutmelines{
     height: 50px;
     width: auto;
     margin-bottom: 50px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main .contactlines{
+    height: 50px;
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -282,7 +305,6 @@ main .aboutme{
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
 }
 .project-preview{
     /*padding: 5px;*/
@@ -350,7 +372,7 @@ main .aboutme{
 #footer .socialmedia img{
     height:20px;
     width: auto;
-    margin: 0 10px 10px 0;
+    margin: 0 20px 20px 0;
 }
 
 #footer nav ul li {
@@ -642,4 +664,17 @@ main .keepuserflow{
 }
 .signature{
     margin-left: 268px;
+}
+.contactp p{
+    text-align: left;
+    font-family: 'roboto', sans-serif;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    color: #333333;
+    font-size: 18px;
+    line-height: 2;
+
 }
