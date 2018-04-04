@@ -31,11 +31,18 @@
     z-index: -1;
 
 }
-.work h2{
-    width: 250px;
-    height: 100px;
-    background-color: white;
-    text-align:center;
+.aboutmelines{
+    position: relative;
+}
+.aboutmelines:before {
+    background-color: #D6D6D6;
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+
 }
 
 .container {
@@ -77,7 +84,7 @@ header .nav a{
     margin-top: 20px;
 }
 header .nav a:hover {
-    color: #CACACA;
+    color: #EF5850;
 }
 .hero b{
       color:#313131;
@@ -141,62 +148,68 @@ header .nav a:hover {
         color: #5ACBCB;
       }
     }
+    .aboutmeparagraph b{
+          color:#313131;
+          font-weight: bold;
+          -webkit-animation:colorchange 20s infinite alternate;
 
-    /*@-webkit-keyframes colorchange {
-      0% {
 
-        color: #ff9a9e;
-      }
+        }
+        @-webkit-keyframes colorchange {
+          0% {
 
-      10% {
+            color: #FED933;
+          }
 
-        color: #fad0c4;
-      }
+          10% {
+            color: #FFF7D4;
 
-      20% {
 
-        color: #48c6ef;
-      }
+          }
 
-      30% {
+          20% {
+            color: #FFB6B3;
 
-        color: #6f86d6;
-      }
 
-      40% {
+          }
 
-        color: #a3bded;
-      }
+          30% {
+            color: #F6E8E5;
+          }
 
-      50% {
+          40% {
+            color: #5ACBCB;
+          }
 
-        color: #6991c7;
-      }
+          50% {
 
-      60% {
+            color: #CFE7E7;
+          }
 
-        color: #13547a;
-      }
+          60% {
 
-      70% {
+            color: #FED933;
+          }
 
-        color: #80d0c7;
-      }
-      80% {
+          70% {
 
-        color: #ffc3a0;
-      }
+            color: #FFF7D4;
+          }
+          80% {
 
-      90% {
+            color: #FFB6B3;
+          }
 
-        color: #ffafbd;
-      }
+          90% {
 
-      100% {
+            color: #F6E8E5;
+          }
 
-        color: #B7F8DB;
-      }
-    }*/
+          100% {
+
+            color: #5ACBCB;
+          }
+        }
 
 header .hero{
   text-align: center;
@@ -239,21 +252,38 @@ main .work img{
 }
 main .mywork{
     height: 50px;
+    width: auto;
     margin-top: 200px;
     margin-bottom: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+main .aboutmelines{
+    height: 50px;
+    width: auto;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 main .work{
-    height: 40px;
+    height: 35px;
     margin-top: 65px;
     margin-bottom: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+main .aboutme{
+        height: 50px;
+        width: auto;
+        margin-bottom: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .project-preview{
     /*padding: 5px;*/
     margin-top: -20px;
@@ -264,9 +294,9 @@ main .work{
     max-width: 927px;
     margin: 0 auto 30px;
 }
-.span_4_of_12{
+/*.span_4_of_12{
     width: 30.13%;
-}
+}*/
 /*main .projects{
     margin-left: auto;
     margin-right: auto;
@@ -303,27 +333,7 @@ main .work{
     text-align: left;
     line-height: 1.5;
 }
- /*.project-preview a{
-    color: black;
-    font-family: 'Monserrat', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-}*/
-    /*right: 50px;*/
-    /*text-align: center;*/
-.span_8_of_12{
-    width: 65.06%;
-
-}
-.col {
-    display: block;
-    float: left;
-    margin: 1% 4.5% 1% 0;
-}
-.col:last-child {
-    margin-right: 0;
-}
+/*footer*/
 
 #footer {
   background-color: #fafafa;
@@ -342,12 +352,7 @@ main .work{
     width: auto;
     margin: 0 10px 10px 0;
 }
-/*footer p footer nav ul {
-  font-size:12px;
-  font-weight:100;
-  text-align: left;
-  margin: 10px auto 0;
-}*/
+
 #footer nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -357,27 +362,21 @@ main .work{
   color:#333333;
   text-decoration: none;
 }
-/*footer .right-footer-block {
-  background-color: transparent;
-}*/
 
-/* Google Fonts
-font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;*/
 
 #content .title h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 30px;
     margin-top: 50px;
 
 }
 
 #content p img{
-    width: 55%;
+    width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -400,13 +399,15 @@ main .number{
 }
 .casestudyparagraph p{
     text-align: left;
-    font-family: 'Merriweather', sans-serif;
-    width: 920px;
+    font-family: 'roboto', sans-serif;
+    width: 900px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
     color: #333333;
+    font-size: 18px;
+    line-height: 2;
 
 }
 .casestudyparagraph  b{
@@ -453,10 +454,9 @@ video{
 }
 main p{
     text-align: center;
-    font-family: 'Montserrat', serif;
+    font-family: 'Roboto', serif;
     color: #6d6d6d;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 19px;
 }
 main .personas{
     width: 800px;
@@ -597,7 +597,7 @@ main .keepuserflow{
 }
 
 .sidenav a:hover {
-    color: #CACACA;
+    color: #EF5850;
 }
 
 .main {
@@ -609,4 +609,37 @@ main .keepuserflow{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+.aboutmeparagraph{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+
+}
+.aboutmeparagraph p{
+    width: 700px;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+.aboutmeparagraph  img{
+    float: right;
+    width: 500px;
+    margin: 0;
+
+}
+.signature img{
+    width: 100px;
+    margin: 0;
+}
+.signature p{
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+
+}
+.signature{
+    margin-left: 268px;
 }
