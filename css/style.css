@@ -161,68 +161,7 @@ header .nav a:hover {
         color: #5ACBCB;
       }
     }
-    .aboutmeparagraph b{
-          color:#313131;
-          font-weight: bold;
-          -webkit-animation:colorchange 20s infinite alternate;
 
-
-        }
-        @-webkit-keyframes colorchange {
-          0% {
-
-            color: #FED933;
-          }
-
-          10% {
-            color: #FFF7D4;
-
-
-          }
-
-          20% {
-            color: #FFB6B3;
-
-
-          }
-
-          30% {
-            color: #F6E8E5;
-          }
-
-          40% {
-            color: #5ACBCB;
-          }
-
-          50% {
-
-            color: #CFE7E7;
-          }
-
-          60% {
-
-            color: #FED933;
-          }
-
-          70% {
-
-            color: #FFF7D4;
-          }
-          80% {
-
-            color: #FFB6B3;
-          }
-
-          90% {
-
-            color: #F6E8E5;
-          }
-
-          100% {
-
-            color: #5ACBCB;
-          }
-        }
 
 header .hero{
   text-align: center;
@@ -645,7 +584,11 @@ main .keepuserflow{
     font-family: "Karla", sans-serif;
     font-size: 20px;
     line-height: 1.5;
+    color: #333333;
 
+}
+.aboutmeparagraph b{
+    color: black;
 }
 .aboutmeparagraph  img{
     float: right;
@@ -653,28 +596,20 @@ main .keepuserflow{
     margin: 0;
 
 }
-.signature img{
-    width: 100px;
-    margin: 0;
-}
-.signature p{
-    font-family: "Karla", sans-serif;
+.contactme{
+    font-family:"Karla", sans-serif;
     font-size: 20px;
-
-}
-.signature{
-    margin-left: 268px;
-}
-.contactp p{
-    text-align: left;
-    font-family: 'roboto', sans-serif;
-    width: 500px;
+    width: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.5;
-    color: #333333;
-    font-size: 18px;
-    line-height: 2;
-
+    font-weight: bold;
+}
+.contactme a{
+    color: #EF5850;
+    text-decoration: none;
+}
+.contactme a:hover{
+    text-decoration: underline;
+    color: #EF5850;
 }
