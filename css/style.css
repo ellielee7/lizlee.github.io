@@ -98,6 +98,10 @@ header .nav a{
 }
 header .nav a:hover {
     color: #EF5850;
+    text-decoration: underline;
+    border-bottom-style: solid;
+    border-bottom: 1px;
+    padding-bottom: 3px;
 }
 .hero b{
       color:#313131;
@@ -272,7 +276,7 @@ main .aboutme{
 
 }
 @media only screen and (max-width: 761px){
-  .project-preview img {
+  .project-preview img{
     height: auto;
     width: 100%;
   }
@@ -358,6 +362,12 @@ main .number{
     margin-top: 50px;
 
 }
+@media only screen and (max-width: 761px){
+  .casestudyparagraph {
+    height: auto;
+    width: 100%;
+  }
+}
 .casestudyparagraph p{
     text-align: left;
     font-family: 'roboto', sans-serif;
@@ -371,6 +381,7 @@ main .number{
     line-height: 2;
 
 }
+
 .casestudyparagraph  b{
     font-weight: bolder;
     font-size: 20px;
@@ -378,6 +389,25 @@ main .number{
 header .nav li span{
     color: #EF5850;
 }
+@media only screen and (max-width: 761px){
+  main p{
+    height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 761px){
+  main .container p{
+    height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 761px){
+  main .container .userflow img{
+    height: auto;
+    width: 100%;
+  }
+}
+
 main .survey{
     display: block;
     margin-left: auto;
@@ -534,8 +564,11 @@ main .keepuserflow{
   text-align: left;
 }
 
-
-
+@media (max-width: 1156px) {
+    .sidenav {
+        display:none !important;
+    }
+}
 
 .sidenav {
     width: 130px;
@@ -546,6 +579,7 @@ main .keepuserflow{
     background: white;
     overflow-x: hidden;
     padding: 8px 0;
+    display: inline-block;
 }
 
 .sidenav a {
