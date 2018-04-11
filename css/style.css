@@ -117,28 +117,28 @@ header .nav a:hover {
       }
 
       10% {
-        color: #FFF7D4;
+        color:#FFB6B3;
 
 
       }
 
       20% {
-        color: #FFB6B3;
+        color: #5ACBCB;
 
 
       }
 
       30% {
-        color: #F6E8E5;
+        color: #FFEFA7;
       }
 
       40% {
-        color: #5ACBCB;
+        color: #FFD2C7;
       }
 
       50% {
 
-        color: #CFE7E7;
+        color: #5ACBCB;
       }
 
       60% {
@@ -148,21 +148,21 @@ header .nav a:hover {
 
       70% {
 
-        color: #FFF7D4;
+        color:#FFB6B3;
       }
       80% {
 
-        color: #FFB6B3;
+        color: #5ACBCB;
       }
 
       90% {
 
-        color: #F6E8E5;
+        color: #FFEFA7;
       }
 
       100% {
 
-        color: #5ACBCB;
+        color:#FFB6B3 ;
       }
     }
 
@@ -277,6 +277,12 @@ main .aboutme{
 }
 @media only screen and (max-width: 761px){
   .project-preview img{
+    height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 761px){
+  .text{
     height: auto;
     width: 100%;
   }
@@ -601,10 +607,10 @@ main .keepuserflow{
     padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
+/*@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-}
+}*/
 .aboutmeparagraph{
     width: 700px;
     display: block;
@@ -646,4 +652,66 @@ main .keepuserflow{
 .contactme a:hover{
     text-decoration: underline;
     color: #EF5850;
+}
+.column {
+    float: left;
+    width: 31.33%;
+    margin-left: 10px;
+    background-color: #fafafa;
+    height: 610px;
+
+
+}
+.row{
+    margin-top: 50px;
+    width: 850px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .row {
+        width: 100%;
+        text-align: center;
+    }
+}
+.row ul {
+    font-family: 'Karla', sans-serif;
+    width: 80%;
+    padding: 3;
+    text-align: left;
+    line-height: 1.5em;
+
+}
+.row h5 {
+    font-family: 'Karla', sans-serif;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.row img{
+    width: 265px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.w3-content .w3-section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
