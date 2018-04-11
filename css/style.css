@@ -307,25 +307,6 @@ main .aboutme{
     text-align: left;
     line-height: 1.5;
 }
-@media only screen and (max-width: 761px){
-  .project-preview img{
-    height: auto;
-    width: 100%;
-    display: block;
-    top: auto;
-    bottom: auto;
-  }
-}
-@media only screen and (max-width: 761px){
-  .text {
-     top: auto;
-     position: relative;
-     display: block;
-     width: 100%;
-     opacity: 1;
- }
-}
-
 /*footer*/
 
 #footer {
@@ -390,14 +371,7 @@ main .number{
     margin-top: 50px;
 
 }
-@media only screen and (max-width: 761px){
-  .casestudyparagraph p{
-    /*height: auto;*/
-    width: 100%;
-    position: relative;
-    display: block;
-  }
-}
+
 .casestudyparagraph p{
     text-align: left;
     font-family: 'roboto', sans-serif;
@@ -410,14 +384,6 @@ main .number{
     font-size: 18px;
     line-height: 2;
 }
-@media only screen and (max-width: 761px){
-  .casestudyparagraph p{
-    /*height: auto;*/
-    width: 100%;
-    position: relative;
-  }
-}
-
 .casestudyparagraph  b{
     font-weight: bolder;
     font-size: 20px;
@@ -434,26 +400,13 @@ main .sketch{
     margin-top: 50px;
 }
 
-@media only screen and (max-width: 761px){
-  main .sketch{
-    height: auto;
-    width: 100%;
-    position: relative;
-  }
-}
 video{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
-@media only screen and (max-width: 761px){
-  video{
-    height: auto;
-    width: 100%;
-    position: relative;
-  }
-}
+
 main p{
     text-align: center;
     font-family: 'Roboto', serif;
@@ -510,70 +463,6 @@ main p{
   background-color: #CFE7E7;
 }
 
-@media (max-width: 761px) {
-    .overlay {
-        position: relative;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: none;
-
-        }
-    }
-@media (max-width: 761px) {
-    .overlay-1 {
-        position: relative;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: none;
-
-    }
-}
-@media (max-width: 761px) {
-    .overlay-2 {
-        position: relative;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: none;
-
-    }
-}
-@media only screen and (max-width: 761px){
-    .project-preview img{
-        height: auto;
-        width: 100%;
-        /*display: block;*/
-        top: auto;
-        bottom: auto;
-    }
-}
-@media only screen and (max-width: 761px){
-    .text {
-        top: auto;
-        position: relative;
-        /*display: block;*/
-        width: 100%;
-        opacity: 1;
-    }
-}
-
 .project-preview:hover .overlay{
   opacity: 0.9;
 }
@@ -595,11 +484,7 @@ main p{
   text-align: left;
 }
 
-@media (max-width: 1156px) {
-    .sidenav {
-        display:none !important;
-    }
-}
+
 
 .sidenav {
     width: 130px;
@@ -704,17 +589,7 @@ main p{
     display: table;
     clear: both;
 }
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .row {
-        width: 100%;
-        text-align: center;
-    }
-}
+
 .row ul {
     font-family: 'Karla', sans-serif;
     width: 80%;
@@ -739,4 +614,126 @@ main p{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+@media only screen and (max-width: 761px){
+  .casestudyparagraph p{
+    /*height: auto;*/
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 761px){
+  .casestudyparagraph p{
+    /*height: auto;*/
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 761px){
+  main .sketch{
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 761px){
+  video{
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 761px) {
+    .overlay {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: #FFF7D4;
+
+        }
+    }
+@media (max-width: 761px) {
+    .overlay-1 {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: #F6E8E5;
+
+    }
+}
+@media (max-width: 761px) {
+    .overlay-2 {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: #CFE7E7;
+
+    }
+}
+@media only screen and (max-width: 761px){
+    .project-preview img{
+        height: auto;
+        width: 100%;
+        display: block;
+        top: auto;
+        bottom: auto;
+        position: static;
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width: 761px){
+    .project-preview a{
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width: 761px){
+    .text{
+        color: black;
+        font-size: 20px;
+        position: relative;
+        top: 110px;
+        /*left: auto;*/
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: 100%
+      }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .row {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 1156px) {
+    .sidenav {
+        display:none !important;
+    }
 }
