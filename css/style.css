@@ -74,11 +74,26 @@ header img{
     width: 100px;
     margin: 20px;
 }
+
 header .nav ul{
     display: inline;
     text-align: right;
     float: right;
     margin: 0;
+}
+@media only screen and (max-width: 761px){
+    header img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 761px){
+    header .nav ul{
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
 }
 
 header .nav ul > li {
@@ -275,18 +290,6 @@ main .aboutme{
     margin-right: auto;
 
 }
-@media only screen and (max-width: 761px){
-  .project-preview img{
-    height: auto;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 761px){
-  .text{
-    height: auto;
-    width: 100%;
-  }
-}
 
  .project-preview h2{
     font-family: 'Roboto', sans-serif;
@@ -304,6 +307,25 @@ main .aboutme{
     text-align: left;
     line-height: 1.5;
 }
+@media only screen and (max-width: 761px){
+  .project-preview img{
+    height: auto;
+    width: 100%;
+    display: block;
+    top: auto;
+    bottom: auto;
+  }
+}
+@media only screen and (max-width: 761px){
+  .text {
+     top: auto;
+     position: relative;
+     display: block;
+     width: 100%;
+     opacity: 1;
+ }
+}
+
 /*footer*/
 
 #footer {
@@ -369,9 +391,11 @@ main .number{
 
 }
 @media only screen and (max-width: 761px){
-  .casestudyparagraph {
-    height: auto;
+  .casestudyparagraph p{
+    /*height: auto;*/
     width: 100%;
+    position: relative;
+    display: block;
   }
 }
 .casestudyparagraph p{
@@ -385,7 +409,13 @@ main .number{
     color: #333333;
     font-size: 18px;
     line-height: 2;
-
+}
+@media only screen and (max-width: 761px){
+  .casestudyparagraph p{
+    /*height: auto;*/
+    width: 100%;
+    position: relative;
+  }
 }
 
 .casestudyparagraph  b{
@@ -395,53 +425,21 @@ main .number{
 header .nav li span{
     color: #EF5850;
 }
-@media only screen and (max-width: 761px){
-  main p{
-    height: auto;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 761px){
-  main .container p{
-    height: auto;
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 761px){
-  main .container .userflow img{
-    height: auto;
-    width: 100%;
-  }
-}
 
-main .survey{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 700px;
-}
-main .userflow{
+main .sketch{
     width: 800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+}
 
-}
-main .sketch{
-    width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-}
-main .prototype{
-    width: 850px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+@media only screen and (max-width: 761px){
+  main .sketch{
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
 }
 video{
     display: block;
@@ -449,57 +447,21 @@ video{
     margin-right: auto;
     margin-top: 100px;
 }
+@media only screen and (max-width: 761px){
+  video{
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+}
 main p{
     text-align: center;
     font-family: 'Roboto', serif;
     color: #6d6d6d;
     font-size: 19px;
 }
-main .personas{
-    width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;;
-}
-main .personas-p{
-    background-color: #EDEDED;
-    display: inline-block;
-    width: 230px;
-    height: 230px;
-    margin: 10px 30px 50px;
-    padding: 10px;
-    font-family: 'Monsterrat', sans-serif;
-    font-size: 14px;
-    position: relative;
-    vertical-align: top;
-    line-height: 20px;
-}
-main .personas-p b{
-    font-size: 15px;
-}
-main .laineuserflow{
-    width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
 
-}
-main .lainewireframe{
-    margin-top: 50px;
-    width: 850px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-main .keepuserflow{
-    width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-}
+
 .project-preview{
   position: relative;
   /*width: 100%;*/
@@ -548,6 +510,69 @@ main .keepuserflow{
   background-color: #CFE7E7;
 }
 
+@media (max-width: 761px) {
+    .overlay {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: none;
+
+        }
+    }
+@media (max-width: 761px) {
+    .overlay-1 {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: none;
+
+    }
+}
+@media (max-width: 761px) {
+    .overlay-2 {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: none;
+
+    }
+}
+@media only screen and (max-width: 761px){
+    .project-preview img{
+        height: auto;
+        width: 100%;
+        /*display: block;*/
+        top: auto;
+        bottom: auto;
+    }
+}
+@media only screen and (max-width: 761px){
+    .text {
+        top: auto;
+        position: relative;
+        /*display: block;*/
+        width: 100%;
+        opacity: 1;
+    }
+}
 
 .project-preview:hover .overlay{
   opacity: 0.9;
