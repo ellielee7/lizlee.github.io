@@ -819,7 +819,6 @@ main p{
 @media screen and (max-width: 600px) {
     .aboutmeparagraph p{
         width: 100%;
-
         float: none;
         margin: auto;
                 }
