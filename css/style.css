@@ -61,6 +61,7 @@
 .container {
     margin: 0 auto;
     width: 97%;
+    margin-top: 100px;
 }
 .one-half img{
     height: 75px;
@@ -73,8 +74,21 @@
 header img{
     width: 100px;
     margin: 20px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 4;
 }
-
+header .nav ul{
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    right: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    margin-bottom: 100px;
+    z-index: 3;
+}
 header .nav ul{
     display: inline;
     text-align: right;
@@ -85,6 +99,8 @@ header .nav ul{
     header img{
         display: block;
         margin: 0 auto;
+        position: static;
+        margin-top: 50px;
     }
 }
 @media only screen and (max-width: 761px){
@@ -187,7 +203,7 @@ header .hero{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 175px;
   width: 40%;
 
 
@@ -251,7 +267,7 @@ main .contactlines{
 main .work{
     height: 35px;
     margin-top: 65px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -496,6 +512,7 @@ main p{
     overflow-x: hidden;
     padding: 8px 0;
     display: inline-block;
+    border: 1px solid #D6D6D6;
 }
 
 .sidenav a {
@@ -542,8 +559,11 @@ main p{
 }
 .aboutmeparagraph  img{
     float: right;
-    width: 500px;
+    /*width: 500px;*/
     margin: 0;
+    width:250px;
+    height:250px;
+    margin-left:15px;
 
 }
 .contactme{
@@ -615,6 +635,24 @@ main p{
     margin-right: auto;
     width: 80%;
 }
+.cbrow{
+    margin-top: 50px;
+    width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.cbcolumn img{
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+
+}
+
+/* Clear floats after the columns */
 @media only screen and (max-width: 761px){
   .casestudyparagraph p{
     /*height: auto;*/
@@ -720,7 +758,6 @@ main p{
       }
 }
 
-
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
@@ -732,8 +769,58 @@ main p{
         text-align: center;
     }
 }
+@media screen and (max-width: 600px) {
+    .cbcolumn {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cbrow {
+        width: 100%;
+        text-align: center;
+    }
+}
 @media (max-width: 1156px) {
     .sidenav {
         display:none !important;
     }
 }
+@media screen and (max-width: 600px) {
+    header .hero{
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      width: 60%;
+
+
+     }
+}
+@media screen and (max-width: 600px) {
+    .aboutmeparagraph{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+@media screen and (max-width: 600px) {
+    .aboutmeparagraph img{
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0px;
+        /*margin: auto;*/
+        /*text-align: center;*/
+        /*display: block;*/
+        right: auto;
+
+
+        }
+@media screen and (max-width: 600px) {
+    .aboutmeparagraph p{
+        width: 100%;
+
+        float: none;
+        margin: auto;
+                }
+    }
