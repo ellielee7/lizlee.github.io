@@ -513,6 +513,7 @@ main p{
     padding: 8px 0;
     display: inline-block;
     border: 1px solid #D6D6D6;
+
 }
 
 .sidenav a {
@@ -532,6 +533,7 @@ main p{
     margin-left: 140px; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
+    position: relative;
 }
 
 /*@media screen and (max-height: 450px) {
@@ -651,6 +653,7 @@ main p{
     text-align: center;
 
 }
+
 
 /* Clear floats after the columns */
 @media only screen and (max-width: 761px){
