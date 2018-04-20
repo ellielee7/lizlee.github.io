@@ -390,7 +390,7 @@ main .aboutme{
 .mainimage img{
     width: 60%;
     margin-left: 0px;
-    /*margin-top: 50px;*/
+    margin-top: 50px;
 }
 .summary h1 span{
     font-weight: bold;
@@ -563,7 +563,7 @@ main p{
     top: 23px;
     left: 200px;
     background: white;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     /*padding: 8px 0;*/
     display: inline;
     /*border: 1px solid #D6D6D6;*/
