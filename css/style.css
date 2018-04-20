@@ -60,7 +60,7 @@
 
 .container {
     margin: 0 auto;
-    width: 97%;
+    width: 100%;
     margin-top: 100px;
 }
 .one-half img{
@@ -73,11 +73,12 @@
 }
 header img{
     width: 100px;
-    margin: 20px;
+    margin-left: 10px;
     position: relative;
-    left: 0px;
+    /*left: 20px;*/
     top: 0px;
     z-index: 4;
+    margin-bottom: 50px
 }
 header .nav ul{
     overflow: hidden;
@@ -88,12 +89,15 @@ header .nav ul{
     width: 100%; /* Full width */
     margin-bottom: 100px;
     z-index: 3;
+    font-weight: bold;
+
 }
 header .nav ul{
     display: inline;
     text-align: right;
     float: right;
     margin: 0;
+
 }
 @media only screen and (max-width: 761px){
     header img{
@@ -367,12 +371,62 @@ main .aboutme{
 }
 
 #content p img{
-    width: 70%;
+    width: 60%;
     display: block;
-    margin-left: auto;
+    /*margin-left: auto;*/
     margin-right: auto;
     /*margin-top: -50px;*/
     /*border: solid 1px;*/
+
+}
+/*case study css*/
+.swot{
+    margin-top: 100px;
+}
+.wrapper{
+    display: inline;
+    margin-top: 100px;
+}
+.mainimage img{
+    width: 60%;
+    margin-left: 0px;
+    /*margin-top: 50px;*/
+}
+.summary h1 span{
+    font-weight: bold;
+    color: #FED933;
+}
+.summary h1{
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    font-size: 56px;
+    font-family: 'Karla', sans-serif;
+
+}
+.casestudytitle{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+    font-size: 48px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}
+.title h1{
+    width: 25%;
+    text-align: left;
+    position: absolute;
+    /*right: 100px;*/
+    /*top: 400px;*/
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: 'Karla', sans-serif;
 
 }
 main .number{
@@ -392,10 +446,10 @@ main .number{
 .casestudyparagraph p{
     text-align: left;
     font-family: 'roboto', sans-serif;
-    width: 850px;
-    display: block;
+    width: 60%;
+    /*display: inline-block;*/
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 50px;
     line-height: 1.5;
     color: #333333;
     font-size: 18px;
@@ -503,25 +557,25 @@ main p{
 
 
 .sidenav {
-    width: 130px;
+    /*width: 130px;*/
     position: fixed;
-    z-index: 1;
-    top: 150px;
-    left: 10px;
+    z-index: 4;
+    top: 23px;
+    left: 200px;
     background: white;
     overflow-x: hidden;
-    padding: 8px 0;
-    display: inline-block;
+    /*padding: 8px 0;*/
+    display: inline;
     /*border: 1px solid #D6D6D6;*/
 
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 2px 4px 2px 8px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     color: black;
-    display: block;
+    display: inline;
     font-family:'karla', sans-serif;
 }
 
@@ -585,18 +639,19 @@ main p{
     text-decoration: underline;
     color: #EF5850;
 }
+
 .column {
     float: left;
     width: 31.33%;
     margin-left: 10px;
-    background-color: #fafafa;
+    background-color: #Fafafa;
     height: 610px;
 
 
 }
 .row{
     margin-top: 50px;
-    width: 850px;
+    width: 900px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -630,6 +685,7 @@ main p{
     width: 265px;
     height: auto;
     margin-bottom: 10px;
+    margin-top: 50px
 }
 .w3-content .w3-section img{
     display: block;
@@ -826,4 +882,30 @@ main p{
         float: none;
         margin: auto;
                 }
+    }
+
+    @media screen and (max-width: 600px) {
+        .title h1{
+            width: 100%;
+            text-align: center;
+            float: none;
+            margin: auto;
+            position: static;
+                    }
+        }
+    @media screen and (max-width: 600px) {
+        .summary h1{
+            width: 100%;
+            text-align: center;
+            float: none;
+            margin: auto;
+            position: static;
+            }
+        }
+    @media screen and (max-width: 600px) {
+        .mainimage img{
+            width: 100%;
+            margin-left: 0px;
+            /*margin-top: 50px;*/
+        }
     }
