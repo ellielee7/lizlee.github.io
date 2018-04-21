@@ -81,6 +81,7 @@ header img{
     margin-bottom: 50px
 }
 header .nav ul{
+    font-weight: bold;
     overflow: hidden;
     background-color: white;
     position: fixed; /* Set the navbar to fixed position */
@@ -89,7 +90,7 @@ header .nav ul{
     width: 100%; /* Full width */
     margin-bottom: 100px;
     z-index: 3;
-    font-weight: bold;
+
 
 }
 header .nav ul{
@@ -104,7 +105,7 @@ header .nav ul{
         display: block;
         margin: 0 auto;
         position: static;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
 @media only screen and (max-width: 761px){
@@ -113,6 +114,8 @@ header .nav ul{
         text-align: center;
         float: none;
         margin: 0;
+        background-color: rgba(250, 250, 250, 0.8);
+        padding-bottom: 20px;
     }
 }
 
@@ -363,7 +366,7 @@ main .aboutme{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
     font-family: 'Karla', sans-serif;
     font-size: 30px;
     margin-top: 50px;
@@ -380,6 +383,17 @@ main .aboutme{
 
 }
 /*case study css*/
+.surveybtn {
+    border: none;
+    margin-bottom: 10px;
+    background-color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    color: #EF5850;
+}
 .swot{
     margin-top: 100px;
 }
@@ -406,6 +420,34 @@ main .aboutme{
     font-family: 'Karla', sans-serif;
 
 }
+.summary1 h1{
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    font-size: 56px;
+    font-family: 'Karla', sans-serif;
+
+}
+.summary2 h1 span{
+    font-weight: bold;
+    color: #5ACBCB;
+}
+.summary2 h1{
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    font-size: 56px;
+    font-family: 'Karla', sans-serif;
+
+}
+.summary1 h1 span{
+    font-weight: bold;
+    color: #EB9885;
+}
 .casestudytitle{
     display: inline;
     margin-left: auto;
@@ -419,11 +461,12 @@ main .aboutme{
 
 }
 .title h1{
-    width: 25%;
+    /*width: 25%;*/
     text-align: left;
     position: absolute;
     /*right: 100px;*/
     /*top: 400px;*/
+    left: 40px;
     margin-left: 30px;
     font-size: 30px;
     font-family: 'Karla', sans-serif;
@@ -446,7 +489,7 @@ main .number{
 .casestudyparagraph p{
     text-align: left;
     font-family: 'roboto', sans-serif;
-    width: 60%;
+    width: 70%;
     /*display: inline-block;*/
     margin-left: auto;
     margin-right: 50px;
@@ -645,7 +688,7 @@ main p{
     width: 31.33%;
     margin-left: 10px;
     background-color: #Fafafa;
-    height: 610px;
+    height: 670px;
 
 
 }
@@ -709,10 +752,14 @@ main p{
     text-align: center;
 
 }
-
+@media only screen and (min-width: 600px){
+  .surveybtn{
+    display: none;
+  }
+}
 
 /* Clear floats after the columns */
-@media only screen and (max-width: 761px){
+@media only screen and (max-width: 768px){
   .casestudyparagraph p{
     /*height: auto;*/
     width: 100%;
@@ -721,7 +768,7 @@ main p{
   }
 }
 
-@media only screen and (max-width: 761px){
+@media only screen and (max-width: 768px){
   .casestudyparagraph p{
     /*height: auto;*/
     width: 100%;
@@ -736,14 +783,14 @@ main p{
     position: relative;
   }
 }
-@media only screen and (max-width: 761px){
+@media only screen and (max-width: 768px){
   video{
     height: auto;
     width: 100%;
     position: relative;
   }
 }
-@media (max-width: 761px) {
+@media (max-width: 768px) {
     .overlay {
         position: static;
         top: auto;
@@ -758,7 +805,7 @@ main p{
 
         }
     }
-@media (max-width: 761px) {
+@media (max-width: 768px) {
     .overlay-1 {
         position: static;
         top: auto;
@@ -773,7 +820,7 @@ main p{
 
     }
 }
-@media (max-width: 761px) {
+@media (max-width: 768px) {
     .overlay-2 {
         position: static;
         top: auto;
@@ -799,42 +846,48 @@ main p{
         text-decoration: none;
     }
 }
-@media only screen and (max-width: 761px){
+@media only screen and (max-width: 768px){
     .project-preview a{
         text-decoration: none;
     }
 }
-@media only screen and (max-width: 761px){
+@media only screen and (max-width: 768px){
+.project-preview h2{
+   font-size: 36px;
+    }
+}
+@media only screen and (max-width: 768px){
     .text{
         color: black;
         font-size: 20px;
         position: relative;
-        top: 130px;
+        top: 125px;
+        padding: 10px;
         /*left: auto;*/
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        width: 90%;
-        margin-top: 10px;
+        width: 95%;
+        margin-top: 20px;
       }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .column {
         width: 100%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .row {
         width: 100%;
         text-align: center;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .cbcolumn {
         width: 100%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .cbrow {
         width: 100%;
         text-align: center;
@@ -845,7 +898,7 @@ main p{
         display:none !important;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header .hero{
       text-align: center;
       display: block;
@@ -857,13 +910,13 @@ main p{
 
      }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .aboutmeparagraph{
         width: 100%;
         float: none;
         margin: auto;
     }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .aboutmeparagraph img{
         width: 100%;
         height: auto;
@@ -875,8 +928,9 @@ main p{
         right: auto;
 
 
+}
         }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .aboutmeparagraph p{
         width: 100%;
         float: none;
@@ -884,28 +938,81 @@ main p{
                 }
     }
 
-    @media screen and (max-width: 600px) {
+
+    @media screen and (max-width: 768px) {
         .title h1{
+            width: 100%;
+            text-align: left;
+            float: none;
+            margin: auto;
+            position: static;
+            left: auto;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .casestudytitle{
+            width: 100%;
+            text-align: left;
+            float: none;
+            margin: auto;
+            position: static;
+            left: auto;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .cstitle{
             width: 100%;
             text-align: center;
             float: none;
             margin: auto;
             position: static;
-                    }
+            left: auto;
         }
-    @media screen and (max-width: 600px) {
+    }
+    @media screen and (max-width: 768px) {
         .summary h1{
             width: 100%;
             text-align: center;
             float: none;
             margin: auto;
             position: static;
+            font-size: 36px;
+            margin-top: 30px;
             }
         }
-    @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
+            .summary1 h1{
+                width: 100%;
+                text-align: center;
+                float: none;
+                margin: auto;
+                position: static;
+                font-size: 36px;
+                margin-top: 30px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .summary2 h1{
+                    width: 100%;
+                    text-align: center;
+                    float: none;
+                    margin: auto;
+                    position: static;
+                    font-size: 36px;
+                    margin-top: 30px;
+                    }
+                }
+    @media screen and (max-width: 768px) {
         .mainimage img{
             width: 100%;
             margin-left: 0px;
             /*margin-top: 50px;*/
         }
+    }
+    @media screen and (max-width: 600px) {
+      .swot img{
+        display: none;
+      }
+      .surveyimages img{
+        display: none;
     }
