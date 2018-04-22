@@ -364,7 +364,7 @@ main .aboutme{
 
 #content .title h1{
     display: block;
-    margin-left: auto;
+    /*margin-left: auto;*/
     margin-right: auto;
     text-align: left;
     font-family: 'Karla', sans-serif;
@@ -383,6 +383,71 @@ main .aboutme{
 
 }
 /*case study css*/
+.branding-color{
+    width: 100%;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.color-box1 {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    margin: 10px;
+    background-color:#F8F5F2;
+    /*border: 3px solid #73AD21;*/
+}
+.color-box2 {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    margin: 10px;
+    background-color:#000000;
+    /*border: 3px solid #73AD21;*/
+}
+.color-box3 {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    margin: 10px;
+    background-color:#979797;
+    /*border: 3px solid #73AD21;*/
+}
+.color-box4 {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    margin: 10px;
+    background-color:#EEE7E1;
+    /*border: 3px solid #73AD21;*/
+}
+.color-box5 {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    margin: 10px;
+    background-color:#D8D8D8;
+    /*border: 3px solid #73AD21;*/
+}
+.color-box6 {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    margin: 10px;
+    background-color:#FFFFFF;
+    border: 1px solid #979797;
+}
+.sketch-1{
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px;
+
+}
 .surveybtn {
     border: none;
     margin-bottom: 10px;
@@ -393,6 +458,7 @@ main .aboutme{
     text-decoration: none;
     font-family: 'Karla', sans-serif;
     color: #EF5850;
+    padding: 10px;
 }
 .swot{
     margin-top: 100px;
@@ -703,6 +769,32 @@ main p{
 
 }
 
+/*branding for laine*/
+.inspoimg{
+    text-align: center;
+    margin-top: 30px;
+
+}
+.inspo{
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.type{
+    margin-top: 30px;
+    text-align: center;
+}
+.type-1{
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -755,6 +847,7 @@ main p{
 @media only screen and (min-width: 600px){
   .surveybtn{
     display: none;
+    padding: 10px;
   }
 }
 
@@ -765,6 +858,8 @@ main p{
     width: 100%;
     position: relative;
     display: block;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
@@ -780,6 +875,13 @@ main p{
   main .sketch{
     height: auto;
     width: 100%;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 761px){
+  main .sketch-1{
+    height: auto;
+    width: 50%;
     position: relative;
   }
 }
@@ -874,6 +976,7 @@ main p{
 @media screen and (max-width: 768px) {
     .column {
         width: 100%;
+        height: 80%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -947,6 +1050,7 @@ main p{
             margin: auto;
             position: static;
             left: auto;
+            padding: 10px;
         }
     }
     @media screen and (max-width: 768px) {
@@ -957,6 +1061,7 @@ main p{
             margin: auto;
             position: static;
             left: auto;
+            padding: 10px
         }
     }
     @media screen and (max-width: 768px) {
