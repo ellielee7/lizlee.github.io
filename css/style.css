@@ -384,11 +384,11 @@ main .aboutme{
 }
 /*case study css*/
 .branding-color{
-    width: 100%;
+    width: 80%;
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
+    text-align: right;
     margin-top: 50px;
 }
 .color-box1 {
@@ -459,7 +459,9 @@ main .aboutme{
     font-family: 'Karla', sans-serif;
     color: #EF5850;
     padding: 10px;
+
 }
+
 .swot{
     margin-top: 100px;
 }
@@ -572,10 +574,10 @@ header .nav li span{
 }
 
 main .sketch{
-    width: 800px;
+    width: 70%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 50px;
     margin-top: 50px;
 }
 
@@ -760,10 +762,10 @@ main p{
 }
 .row{
     margin-top: 50px;
-    width: 900px;
+    width: 1000px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 50px;
     text-align: center;
 
 
@@ -771,8 +773,9 @@ main p{
 
 /*branding for laine*/
 .inspoimg{
-    text-align: center;
+    text-align: right;
     margin-top: 30px;
+    width: 88%;
 
 }
 .inspo{
@@ -788,7 +791,7 @@ main p{
 }
 .type-1{
     width: 300px;
-    margin-left: 5px;
+    margin-left: 150px;
     margin-right: 5px;
     display: inline-block;
     text-align: center;
@@ -830,10 +833,10 @@ main p{
 }
 .cbrow{
     margin-top: 50px;
-    width: 950px;
+    width: 1100px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0px;
     text-align: center;
 
 }
@@ -841,13 +844,21 @@ main p{
     width: 250px;
     height: auto;
     margin: 20px;
+    margin-left:50px;
+    margin-right:50px;
     text-align: center;
 
 }
+
+.casestudyparagraph i{
+    text-align: center;
+    margin-left: 50px;
+}
+
 @media only screen and (min-width: 600px){
   .surveybtn{
-    display: none;
-    padding: 10px;
+      display: none;
+    text-align: left;
   }
 }
 
@@ -996,6 +1007,12 @@ main p{
         text-align: center;
     }
 }
+@media screen and (max-width: 768px) {
+    .inspoimg img{
+        width: 100%;
+        text-align: center;
+    }
+}
 @media (max-width: 1156px) {
     .sidenav {
         display:none !important;
@@ -1120,4 +1137,11 @@ main p{
       }
       .surveyimages img{
         display: none;
+    }
+    @media screen and (max-width: 768px) {
+        .type-1{
+            width: 100%;
+            margin-left: 0px;
+            /*margin-top: 50px;*/
+        }
     }
