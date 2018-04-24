@@ -363,13 +363,22 @@ main .aboutme{
 
 
 #content .title h1{
-    display: block;
-    /*margin-left: auto;*/
+    /*display: block;
+    margin-left: auto;
     margin-right: auto;
     text-align: left;
     font-family: 'Karla', sans-serif;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 50px;*/
+    width: 20%;
+    text-align: right;
+    position: absolute;
+    /*right: 100px;*/
+    /*top: 400px;*/
+    left: 40px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: 'Karla', sans-serif;
 
 }
 
@@ -384,11 +393,11 @@ main .aboutme{
 }
 /*case study css*/
 .branding-color{
-    width: 80%;
-    display: inline-block;
+    width: 850px;
+    /*display: inline-block;*/
     margin-right: auto;
     margin-left: auto;
-    text-align: right;
+    text-align: center;
     margin-top: 50px;
 }
 .color-box1 {
@@ -470,8 +479,8 @@ main .aboutme{
     margin-top: 100px;
 }
 .mainimage img{
-    width: 60%;
-    margin-left: 0px;
+    width: 50%;
+    margin-left: 150px;
     margin-top: 50px;
 }
 .summary h1 span{
@@ -524,13 +533,13 @@ main .aboutme{
     font-family: 'Karla', sans-serif;
     font-size: 48px;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-bottom: 10px;
 
 }
 .title h1{
-    /*width: 25%;*/
-    text-align: left;
+    width: 20%;
+    text-align: right;
     position: absolute;
     /*right: 100px;*/
     /*top: 400px;*/
@@ -557,10 +566,10 @@ main .number{
 .casestudyparagraph p{
     text-align: left;
     font-family: 'roboto', sans-serif;
-    width: 70%;
+    width: 60%;
     /*display: inline-block;*/
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 100px;
     line-height: 1.5;
     color: #333333;
     font-size: 18px;
@@ -577,7 +586,7 @@ main .sketch{
     width: 70%;
     display: block;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: auto;
     margin-top: 50px;
 }
 
@@ -667,28 +676,46 @@ main p{
 
 
 
-.sidenav {
+/*.sidenav {*/
     /*width: 130px;*/
-    position: fixed;
+    /*position: fixed;
     z-index: 4;
     top: 23px;
-    left: 200px;
-    background: white;
+    left: 200px;*/
+    /*background: white;*/
     /*overflow-x: hidden;*/
     /*padding: 8px 0;*/
-    display: inline;
+    /*display: inline;*/
     /*border: 1px solid #D6D6D6;*/
 
+/*}*/
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 220px;
+    left: 10px;
+    background: white;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+.sidenav a {
+    font-family: 'Karla', sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
 }
 
-.sidenav a {
+/*.sidenav a {
     padding: 2px 4px 2px 8px;
     text-decoration: none;
     font-size: 13px;
     color: black;
     display: inline;
     font-family:'karla', sans-serif;
-}
+}*/
 
 .sidenav a:hover {
     color: #EF5850;
@@ -762,10 +789,10 @@ main p{
 }
 .row{
     margin-top: 50px;
-    width: 1000px;
+    width: 850px;
     display: block;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: auto;
     text-align: center;
 
 
@@ -773,9 +800,11 @@ main p{
 
 /*branding for laine*/
 .inspoimg{
-    text-align: right;
+    text-align: center;
     margin-top: 30px;
-    width: 88%;
+    width: 850px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 .inspo{
@@ -791,8 +820,8 @@ main p{
 }
 .type-1{
     width: 300px;
-    margin-left: 150px;
-    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
     display: inline-block;
     text-align: center;
 }
@@ -836,7 +865,7 @@ main p{
     width: 1100px;
     display: block;
     margin-left: auto;
-    margin-right: 0px;
+    margin-right: auto;
     text-align: center;
 
 }
@@ -852,16 +881,31 @@ main p{
 
 .casestudyparagraph i{
     text-align: center;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h6{
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    margin-left: 190px;
+    text-align: left;
+
 }
 
 @media only screen and (min-width: 600px){
   .surveybtn{
-      display: none;
+    display: none;
     text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
+@media only screen and (max-width: 768px){
+  .branding{
+    display: none;
+  }
+}
 /* Clear floats after the columns */
 @media only screen and (max-width: 768px){
   .casestudyparagraph p{
@@ -871,6 +915,8 @@ main p{
     display: block;
     padding-right: 5px;
     padding-left: 5px;
+    top: -30px;
+    bottom: 0px;
   }
 }
 
@@ -898,6 +944,7 @@ main p{
 }
 @media only screen and (max-width: 768px){
   video{
+    margin-top: 0px;
     height: auto;
     width: 100%;
     position: relative;
@@ -1008,9 +1055,27 @@ main p{
     }
 }
 @media screen and (max-width: 768px) {
-    .inspoimg img{
+    .inspo{
         width: 100%;
         text-align: center;
+        margin: 0px;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .inspoimg{
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    h6{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 @media (max-width: 1156px) {
@@ -1067,7 +1132,21 @@ main p{
             margin: auto;
             position: static;
             left: auto;
-            padding: 10px;
+            padding: 3px;
+            margin-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #content .title h1{
+            width: 100%;
+            text-align: left;
+            float: none;
+            margin: auto;
+            position: static;
+            left: auto;
+            padding: 3px;
+            margin-top: 5px;
         }
     }
     @media screen and (max-width: 768px) {
@@ -1144,4 +1223,9 @@ main p{
             margin-left: 0px;
             /*margin-top: 50px;*/
         }
+    }
+    @media screen and (max-width: 600px) {
+      .cheeseblockrp img{
+        display: none;
+      }
     }
