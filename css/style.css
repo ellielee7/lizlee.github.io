@@ -375,6 +375,7 @@ main .aboutme{
     position: absolute;
     /*right: 100px;*/
     /*top: 400px;*/
+    margin-top: 50px;
     left: 40px;
     margin-left: 30px;
     font-size: 30px;
@@ -457,7 +458,7 @@ main .aboutme{
     margin-top: 50px;
 
 }
-.surveybtn {
+.surveybtn{
     border: none;
     margin-bottom: 10px;
     background-color: inherit;
@@ -466,11 +467,14 @@ main .aboutme{
     display: inline-block;
     text-decoration: none;
     font-family: 'Karla', sans-serif;
-    color: #EF5850;
+    color:#EF5850;
     padding: 10px;
+    font-weight: bold;
 
 }
-
+a:active{
+    color: black;
+}
 .swot{
     margin-top: 100px;
 }
@@ -703,7 +707,7 @@ main p{
     font-family: 'Karla', sans-serif;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     display: block;
 }
@@ -1226,6 +1230,12 @@ h6{
     }
     @media screen and (max-width: 600px) {
       .cheeseblockrp img{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px){
+      .hide{
         display: none;
       }
     }
