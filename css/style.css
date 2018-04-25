@@ -1146,6 +1146,17 @@ h6{
                 }
     }
 
+@media screen and (max-width: 768px) {
+    .contactme{
+        /*font-family:"Karla", sans-serif;
+        font-size: 20px;*/
+        width: 100%;
+        /*display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;*/
+    }
+}
 
     @media screen and (max-width: 768px) {
         .title h1{
