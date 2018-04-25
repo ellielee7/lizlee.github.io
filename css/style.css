@@ -375,7 +375,7 @@ main .aboutme{
     position: absolute;
     /*right: 100px;*/
     /*top: 400px;*/
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     left: 40px;
     margin-left: 30px;
     font-size: 30px;
@@ -599,6 +599,7 @@ video{
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 main p{
@@ -797,6 +798,7 @@ main p{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     text-align: center;
 
 
@@ -895,7 +897,13 @@ h6{
     text-align: left;
 
 }
-
+@media only screen and (max-width: 768px){
+.container {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 0px;
+    }
+}
 @media only screen and (min-width: 600px){
   .surveybtn{
     display: none;
@@ -910,6 +918,11 @@ h6{
     display: none;
   }
 }
+@media only screen and (min-width: 600px){
+  .show{
+    display: none;
+  }
+}
 /* Clear floats after the columns */
 @media only screen and (max-width: 768px){
   .casestudyparagraph p{
@@ -921,6 +934,11 @@ h6{
     padding-left: 5px;
     top: -30px;
     bottom: 0px;
+  }
+}
+@media only screen and (max-width: 768px){
+  main .number{
+    margin-top: 50px;
   }
 }
 
