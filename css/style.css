@@ -393,6 +393,7 @@ main .aboutme{
 
 }
 /*case study css*/
+
 .branding-color{
     width: 850px;
     /*display: inline-block;*/
@@ -714,7 +715,7 @@ main p{
     z-index: 1;
     top: 170px;
     left: 10px;
-    background: white;
+    /*background: white;*/
     overflow-x: hidden;
     padding: 8px 0;
 }
@@ -881,6 +882,7 @@ main p{
     width: 80%;
 }
 .cbrow{
+    background-color: #fafafa;
     margin-top: 50px;
     width: 1100px;
     display: block;
@@ -907,8 +909,10 @@ main p{
 h6{
     font-family: 'Karla', sans-serif;
     font-size: 24px;
-    margin-left: 190px;
-    text-align: left;
+    /*margin-left: 190px;*/
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 0px;
 
 }
 @media only screen and (max-width: 768px){
