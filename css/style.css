@@ -635,7 +635,18 @@ main p{
   width: 100%;
   height: auto;
 }
-
+.overlay-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #009CE2;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -671,18 +682,6 @@ main p{
   opacity: 0;
   transition: .5s ease;
   background-color: #CFE7E7;
-}
-.overlay-3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #009CE2;
 }
 
 .project-preview:hover .overlay{
