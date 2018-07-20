@@ -646,7 +646,7 @@ main p{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: white;
+  background-color: #FDD4B9;
 }
 .overlay-1 {
   position: absolute;
@@ -1016,7 +1016,7 @@ h6{
         width: 100%;
         opacity: 1;
         transition: .5s ease;
-        background-color: white;
+        background-color: #FDD4B9;
 
         }
     }
