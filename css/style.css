@@ -694,6 +694,9 @@ main p{
 .project-preview:hover .overlay-2{
   opacity: 0.9;
 }
+.project-preview:hover .overlay-3{
+  opacity: 0.9;
+}
 
 .text{
   color: black;
@@ -1018,7 +1021,7 @@ h6{
         }
     }
 @media (max-width: 768px) {
-    .overlay {
+    .overlay-1 {
         position: static;
         top: auto;
         bottom: auto;
@@ -1033,7 +1036,7 @@ h6{
         }
     }
 @media (max-width: 768px) {
-    .overlay-1 {
+    .overlay-2 {
         position: static;
         top: auto;
         bottom: auto;
@@ -1048,7 +1051,7 @@ h6{
     }
 }
 @media (max-width: 768px) {
-    .overlay-2 {
+    .overlay-3 {
         position: static;
         top: auto;
         bottom: auto;
