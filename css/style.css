@@ -307,7 +307,7 @@ main .aboutme{
 }*/
 .project-preview img{
     width: 927px;
-    height: 500px;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
