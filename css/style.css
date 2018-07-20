@@ -645,7 +645,7 @@ main p{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #009CE2;
+  background-color: white;
 }
 .overlay {
   position: absolute;
@@ -657,7 +657,7 @@ main p{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #FFF7D4;
+  background-color: white;
 }
 .overlay-1 {
   position: absolute;
@@ -1001,6 +1001,21 @@ h6{
     position: relative;
   }
 }
+@media (max-width: 768px) {
+    .overlay-3 {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: white;
+
+        }
+    }
 @media (max-width: 768px) {
     .overlay {
         position: static;
