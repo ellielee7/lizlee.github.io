@@ -660,7 +660,7 @@ main p{
   transition: .5s ease;
   background-color: #FFF7D4;
 }
-.overlay-1 {
+.overlay-2 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -672,7 +672,7 @@ main p{
   transition: .5s ease;
   background-color: #F6E8E5;
 }
-.overlay-2 {
+.overlay-3 {
   position: absolute;
   top: 0;
   bottom: 0;
