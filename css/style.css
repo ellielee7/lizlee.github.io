@@ -657,7 +657,7 @@ main p{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #FFF7D4;
+  background-color: white;
 }
 .overlay-1 {
   position: absolute;
