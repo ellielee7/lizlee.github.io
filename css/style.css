@@ -1,8 +1,79 @@
-/*body{
-    width: 1200px;
+body{
+    width: 1000px;
     margin: 0 auto;
 
-}*/
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.column1{
+    float: left;
+    width 50%;
+    padding: 10px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.column1 img{
+    width:470px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.row1{
+    margin-top: 10px;
+}
+.row1:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+.overview {
+  position: relative;
+  width: 100%;
+}
+.overview:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: 'Khula', sans-serif;
+}
+
+
 .lines {
     position: relative;
 }
@@ -58,11 +129,7 @@
 
 }
 
-.container {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 100px;
-}
+
 .one-half img{
     height: 75px;
     width: auto;
@@ -71,23 +138,29 @@
     top: 20px;
     left: 50px;
 }
+header{
+    /*width: 700px;*/
+    height: auto;
+    /*text-align: center;*/
+}
 header img{
-    width: 100px;
-    margin-left: 10px;
+    width: 35px;
+    /*margin-left: 100px;*/
     position: relative;
-    /*left: 20px;*/
-    top: 0px;
+    margin-left: auto;
+    top: 20px;
     z-index: 4;
     margin-bottom: 50px
 }
 header .nav ul{
-    font-weight: bold;
+    font-weight: light;
     overflow: hidden;
     background-color: white;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0;
-    right: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    /*position: fixed; /* Set the navbar to fixed position */*/
+    /*top: 20px;*/
+    right: 190px; /* Position the navbar at the top of the page */
+    height: 40px;
+    /*width: 100%; /* Full width */*/
     margin-bottom: 100px;
     z-index: 3;
 
@@ -98,31 +171,14 @@ header .nav ul{
     text-align: right;
     float: right;
     margin: 0;
+    margin-top: 30px;
 
-}
-@media only screen and (max-width: 761px){
-    header img{
-        display: block;
-        margin: 0 auto;
-        position: static;
-        margin-top: 70px;
-    }
-}
-@media only screen and (max-width: 761px){
-    header .nav ul{
-        display: block;
-        text-align: center;
-        float: none;
-        margin: 0;
-        background-color: rgba(250, 250, 250, 0.8);
-        padding-bottom: 20px;
-    }
 }
 
 header .nav ul > li {
   list-style-type: none;
   display: inline-block;
-  margin: 25px 10px 0 10px;
+  margin: 5px 10px 0 10px;
 }
 
 header .nav a{
@@ -130,12 +186,12 @@ header .nav a{
     padding-right: 10px;
     color: black;
     text-decoration: none;
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    margin-top: 50px;
 }
 header .nav a:hover {
-    color: #EF5850;
+    color: #F8E71C;
     text-decoration: underline;
     border-bottom-style: solid;
     border-bottom: 1px;
@@ -148,85 +204,39 @@ header .nav a:hover {
 
 
     }
-    @-webkit-keyframes colorchange {
-      0% {
-
-        color: #FED933;
-      }
-
-      10% {
-        color:#FFB6B3;
-
-
-      }
-
-      20% {
-        color: #5ACBCB;
-
-
-      }
-
-      30% {
-        color: #FFEFA7;
-      }
-
-      40% {
-        color: #FFD2C7;
-      }
-
-      50% {
-
-        color: #5ACBCB;
-      }
-
-      60% {
-
-        color: #FED933;
-      }
-
-      70% {
-
-        color:#FFB6B3;
-      }
-      80% {
-
-        color: #5ACBCB;
-      }
-
-      90% {
-
-        color: #FFEFA7;
-      }
-
-      100% {
-
-        color:#FFB6B3 ;
-      }
-    }
 
 
 header .hero{
-  text-align: center;
+  text-align: left;
   display: block;
-  margin-left: auto;
+  margin-left: 9px;
   margin-right: auto;
-  margin-top: 175px;
-  width: 40%;
+  margin-top: 50px;
+  width: 100%;
+  float: left;
+
 
 
  }
 
 header .hero h1 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: bold;
   /*padding: 10px;*/
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Khula', sans-serif;
 
 }
 header .hero h3{
-    color: #818181;
-    font-family: 'Karla', sans-serif;
+    color: black;
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    width: 280px;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 1.2;
+    margin-bottom: 150px;
+
 }
 
 header .hero img{
@@ -254,7 +264,7 @@ main .mywork{
     margin-right: auto;
 }
 main .aboutmelines{
-    height: 50px;
+    height: 80px;
     width: auto;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -280,7 +290,7 @@ main .work{
     margin-right: auto;
 }
 main .aboutme{
-        height: 50px;
+        height: 40px;
         width: auto;
         margin-bottom: 50px;
         display: block;
@@ -294,8 +304,9 @@ main .aboutme{
     /*border-radius: 0 0 4px 4px;*/
 }
 .section{
-    max-width: 927px;
-    margin: 0 auto 30px;
+    max-width: 776px;
+    position: relative;
+    /*margin: 0 auto 30px;*/
 }
 /*.span_4_of_12{
     width: 30.13%;
@@ -306,7 +317,7 @@ main .aboutme{
     width: 923px;
 }*/
 .project-preview img{
-    width: 927px;
+    width: 377px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -314,41 +325,45 @@ main .aboutme{
 
 }
 
- .project-preview h2{
-    font-family: 'Roboto', sans-serif;
+.text h2{
+    font-family: 'Khula', sans-serif;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 24px;
 }
- .project-preview h5{
-    font-family: 'Karla', sans-serif;
+ .text h5{
+    font-family: 'roboto', sans-serif;
     font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
 }
- .project-preview p{
-    font-family: 'Karla', sans-serif;
+ .text p{
+    font-family: 'roboto', sans-serif;
     font-weight: lighter;
     /*position: relative;*/
     text-align: left;
-    line-height: 1.5;
+    line-height: 1;
+    font-size: 14px;
 }
 /*footer*/
 
 #footer {
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
   color: #333333;
   height: 100px;
   /*position: relative;*/
   /*overflow: hidden;*/
   z-index: 0;
-  font-family:'Karla', sans-serif;
-  margin-top: 80px;
+  font-size: 14px;
+  font-family:'roboto', sans-serif;
+  margin-top: 100px;
   padding: 10px;
   text-align: center;
 }
 #footer .socialmedia img{
-    height: 20px;
+    height: 12px;
     width: auto;
     text-align: center;
-    margin: 0 20px 20px 0;
+    margin: 0px 50px 20px 0;
 }
 
 #footer nav ul li {
@@ -378,8 +393,8 @@ main .aboutme{
     /*margin-top: 50px;*/
     left: 40px;
     margin-left: 30px;
-    font-size: 30px;
-    font-family: 'Karla', sans-serif;
+    font-size: 26px;
+    font-family: 'khula', sans-serif;
 
 }
 
@@ -468,7 +483,7 @@ main .aboutme{
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Khula', sans-serif;
     color:#EF5850;
     padding: 10px;
     font-weight: bold;
@@ -486,7 +501,7 @@ a:active{
 }
 .mainimage img{
     width: 50%;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-top: 50px;
 }
 .summary h1 span{
@@ -499,9 +514,10 @@ a:active{
     text-align: left;
     position: absolute;
     right: 50px;
-    top: 340px;
-    font-size: 40px;
-    font-family: 'Karla', sans-serif;
+    top: 280px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 
 }
 .maintitle h1{
@@ -510,19 +526,20 @@ a:active{
     position: absolute;
     right: 50px;
     top: 220px;
-    font-size: 56px;
-    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+    font-family: 'Khula', sans-serif;
 
 }
 .summary1 h1{
     line-height: 1;
-    width: 30%;
+    width: 20%;
     text-align: left;
     position: absolute;
-    right: 50px;
-    top: 350px;
-    font-size: 40px;
-    font-family: 'Karla', sans-serif;
+    right: 175px;
+    top: 280px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 
 }
 .summary2 h1 span{
@@ -531,13 +548,14 @@ a:active{
 }
 .summary2 h1{
     line-height: 1;
-    width: 30%;
+    width: 20%;
     text-align: left;
     position: absolute;
-    right: 50px;
-    top: 340px;
-    font-size: 40px;
-    font-family: 'Karla', sans-serif;
+    right: 175px;
+    top: 280px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 
 }
 .summary1 h1 span{
@@ -549,7 +567,7 @@ a:active{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Khula', sans-serif;
     font-size: 48px;
     margin-top: 50px;
     margin-left: 15px;
@@ -564,12 +582,12 @@ a:active{
     /*top: 400px;*/
     left: 40px;
     margin-left: 30px;
-    font-size: 30px;
-    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    font-family: 'Khula', sans-serif;
 
 }
 main .number{
-    width: 80px;
+    width: 50px;
     margin-top: 100px;
     margin-bottom: 50px;
     display: block;
@@ -591,11 +609,11 @@ main .number{
     margin-right: 100px;
     line-height: 1.5;
     color: #333333;
-    font-size: 18px;
+    font-size: 14px;
 }
 .casestudyparagraph  b{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 16px;
 }
 header .nav li span{
     color: #EF5850;
@@ -646,7 +664,7 @@ main p{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #D0E6FF;
+  background-color: white;
 }
 .overlay-1 {
   position: absolute;
@@ -735,10 +753,10 @@ main p{
     padding: 8px 0;
 }
 .sidenav a {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Khula', sans-serif;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     display: block;
 }
@@ -753,7 +771,7 @@ main p{
 }*/
 
 .sidenav a:hover {
-    color: #EF5850;
+    color: #F8E71C;
 }
 
 .main {
@@ -777,7 +795,7 @@ main p{
 }
 .aboutmeparagraph p{
     width: 700px;
-    font-family: "Karla", sans-serif;
+    font-family: "Khula", sans-serif;
     font-size: 20px;
     line-height: 1.5;
     color: #333333;
@@ -838,13 +856,13 @@ main p{
 .inspoimg{
     text-align: center;
     margin-top: 30px;
-    width: 850px;
+    width: 1000px;
     margin-right: auto;
     margin-left: auto;
 
 }
 .inspo{
-    width: 400px;
+    width: 350px;
     margin-left: 10px;
     margin-right: 10px;
     display: inline-block;
@@ -930,8 +948,46 @@ h6{
     margin-bottom: 0px;
 
 }
+@media only screen and (max-width: 761px){
+    header img{
+        display: block;
+        margin: 0 auto;
+        position: static;
+    }
+}
+@media only screen and (max-width: 761px){
+    header .nav ul{
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 0;
+        background-color: rgba(250, 250, 250, 0.8);
+        /*padding-bottom: 20px;*/
+        /*position: fixed;*/
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 0;
+    }
+}
 @media only screen and (max-width: 768px){
-.container {
+    body {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .hero h1 {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .hero h3 {
+    text-align: left;
+    padding: 5px;
     margin: 0 auto;
     width: 100%;
     margin-top: 0px;
@@ -1016,57 +1072,13 @@ h6{
         width: 100%;
         opacity: 1;
         transition: .5s ease;
-        background-color: #D0E6FF;
+        /*background-color: #D0E6FF;*/
 
         }
     }
-@media (max-width: 768px) {
-    .overlay-1 {
-        position: static;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: #FFF7D4;
 
-        }
-    }
-@media (max-width: 768px) {
-    .overlay-2 {
-        position: static;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: #F6E8E5;
-
-    }
-}
-@media (max-width: 768px) {
-    .overlay-3 {
-        position: static;
-        top: auto;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: #CFE7E7;
-
-    }
-}
 @media only screen and (max-width: 761px){
-    .project-preview img{
+    .column1 img{
         height: auto;
         width: 100%;
         display: block;
@@ -1081,15 +1093,53 @@ h6{
         text-decoration: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .text {
+        width: 50%;
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 768px){
-.project-preview h2{
+.column1 h2{
    font-size: 36px;
     }
 }
 @media only screen and (max-width: 768px){
-    .text{
+    .text h2{
+        display: none;
         color: black;
-        font-size: 20px;
+        font-size: 16px;
+        position: relative;
+        top: 200px;
+        padding: 10px;
+        /*left: auto;*/
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: 95%;
+        margin-top: 20px;
+      }
+}
+@media only screen and (max-width: 768px){
+    .text h5{
+        display: none;
+        color: black;
+        font-size: 14px;
+        position: relative;
+        top: 125px;
+        padding: 10px;
+        left: auto;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: 95%;
+        margin-top: 20px;
+      }
+}
+@media only screen and (max-width: 768px){
+    .text p{
+        display: none;
+        color: black;
+        font-size: 14px;
         position: relative;
         top: 125px;
         padding: 10px;
@@ -1098,6 +1148,7 @@ h6{
         -ms-transform: translate(-50%, -50%);
         width: 95%;
         margin-top: 20px;
+        right: 0;
       }
 }
 
@@ -1160,7 +1211,19 @@ h6{
       margin-left: auto;
       margin-right: auto;
       margin-top: 50px;
-      width: 60%;
+      width: 100%;
+
+
+     }
+}
+@media screen and (max-width: 768px) {
+    header .hero h3{
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      width: 100%;
 
 
      }
