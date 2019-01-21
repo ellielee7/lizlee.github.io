@@ -1135,7 +1135,19 @@ h6{
     position: relative;
   }
 }
-
+@media only screen and (max-width: 761px){
+ .scroll img{
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 761px){
+ .scroll{
+    height: 300px;
+    position: relative;
+  }
+}
 @media only screen and (max-width: 761px){
   main .sketch{
     height: auto;
@@ -1143,6 +1155,7 @@ h6{
     position: relative;
   }
 }
+
 @media only screen and (max-width: 761px){
   main .sketch-1{
     height: auto;
@@ -1257,6 +1270,18 @@ h6{
 }
 @media screen and (max-width: 768px) {
     .row {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .columnlz {
+        width: 100%;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rowlz {
         width: 100%;
         text-align: center;
     }
@@ -1460,6 +1485,17 @@ h6{
                     margin-top: 30px;
                     }
                 }
+                @media screen and (max-width: 768px) {
+                    .summary4 h1{
+                        width: 100%;
+                        text-align: center;
+                        float: none;
+                        margin: auto;
+                        position: static;
+                        font-size: 36px;
+                        margin-top: 30px;
+                        }
+                    }
     @media screen and (max-width: 768px) {
         .mainimage img{
             width: 100%;
