@@ -309,7 +309,7 @@ main .aboutme{
     /*margin: 0 auto 30px;*/
 }
 .scroll{
-    height: 300px;
+    height: 600px;
     overflow: scroll;
     margin-right: auto;
     margin-left: auto;
