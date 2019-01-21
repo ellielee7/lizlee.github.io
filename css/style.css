@@ -308,6 +308,19 @@ main .aboutme{
     position: relative;
     /*margin: 0 auto 30px;*/
 }
+.scroll{
+    height: 300px;
+    overflow: scroll;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.scroll img{
+    width: 776px;
+
+}
+
 /*.span_4_of_12{
     width: 30.13%;
 }*/
@@ -489,6 +502,21 @@ main .aboutme{
     font-weight: bold;
 
 }
+.surveybtn1{
+    border: none;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    background-color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Khula', sans-serif;
+    color:#EF5850;
+    /*padding: 10px;*/
+    font-weight: bold;
+
+}
 a:active{
     color: black;
 }
@@ -561,6 +589,23 @@ a:active{
 .summary1 h1 span{
     font-weight: bold;
     color: #EB9885;
+}
+
+.summary4 h1{
+    line-height: 1;
+    width: 30%;
+    text-align: left;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+}
+.summary4 h1 span{
+    font-weight: bold;
+    color: #004DE1;
 }
 .casestudytitle{
     display: inline;
@@ -836,7 +881,7 @@ main p{
     width: 31.33%;
     margin-left: 10px;
     background-color: #Fafafa;
-    height: 670px;
+    height: 600px;
 
 
 }
@@ -851,6 +896,34 @@ main p{
 
 
 }
+
+.columnlz {
+    float: left;
+    width: 31.33%;
+    margin-left: 10px;
+    background-color: white;
+    height: 400px;
+    margin-bottom: 35px;
+
+
+}
+.rowlz{
+    margin-top: 0px;
+    width: 850px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.rowlz li{
+    list-style-type: none;
+}
+.icons img{
+    height: 100px;
+    margin-top: 15px;
+}
+
 
 /*branding for laine*/
 .inspoimg{
@@ -887,7 +960,11 @@ main p{
     display: table;
     clear: both;
 }
-
+.rowlz:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .row ul {
     font-family: 'Karla', sans-serif;
     width: 80%;
@@ -903,10 +980,30 @@ main p{
     font-size: 16px;
 }
 .row img{
-    width: 265px;
+    width: 175px;
     height: auto;
     margin-bottom: 10px;
     margin-top: 50px
+}
+.rowlz img{
+    width: 175px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 50px
+}
+.rowlz ul {
+    font-family: 'Karla', sans-serif;
+    width: 80%;
+    padding: 3;
+    text-align: left;
+    line-height: 1.5em;
+
+}
+.rowlz h5 {
+    font-family: 'Karla', sans-serif;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 16px;
 }
 .w3-content .w3-section img{
     display: block;
