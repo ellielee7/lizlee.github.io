@@ -15,6 +15,9 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>ScrollReveal({ reset: true }{ delay: 500 });</script>
+    </head>
     </head>
     <body>
         <header>
@@ -28,10 +31,12 @@
                     </ul>
                 </div>
         </header>
+            <div class ="reveal">
             <div class = "wrapper">
                 <div class = "mainimage"><img src="images/incoverviewpage1.jpg" class="work" alt="cheese block"></div>
                 <div class = "maintitle"><h1>LegalZoom</h1></div>
                 <div class = "summary4"><h1>Bridging the gap between <span>life</span> and <span>legal.</span> </h1></div>
+            </div>
             </div>
 
             <main role="main" class="container">
@@ -43,9 +48,9 @@
               <a href="#about">about</a>
               <a href="#research">research</a>
               <a href="#wf">wireframes</a>
-              <a href="#uf">iterations</a>
-              <a href="#mu">mockups + prototype</a>
-              <a href="#conclusion">what I learned</a>
+              <a href="#uf">usertesting</a>
+              <a href="#mu">what I learned</a>
+              <!-- <a href="#conclusion">what I learned</a> -->
             </div>
             <div class = "wrapper">
                 <div class="title">
@@ -75,9 +80,11 @@
                 <p>To better understand the scope of the project I had to take a look at the legacy page. I utilized Quantum Metrics to watch videos of current users interacting with the page. From there
                     I was able to see where the users were dropping off, the pain points, and any confusion they might have stumbled on.  </p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSewBXrNq3gyact5jJF0j-iycu32O-Jv4a_tKY4Q9ij6GhzFwA/viewform?usp=sf_link" target="_blank" class="surveybtn">View Survey</a>
+                <div class = "reveal">
                 <div class ="scroll">
                     <img src ="images/inclegacy.png">
                     </div>
+                </div>
             <!-- <div class ="surveyimages">
                 <img src ="images/survey.png" class= 'sketch' alt="google survey">
                 <img src ="images/survey2.png" class= 'sketch' alt="google survey">
@@ -139,9 +146,11 @@
                         next low fidelity wireframes that I created in sketch. I wanted to play around with placement, layouts, copy and icons. I then presented
                         the multiple iterations that I created to my director and lead UX designers and settled on two different designs. I then created a high fidelity version of those wireframes and created a prototype on Invision.</p>
                 </div>
+                <div class = "reveal">
                 <div class ="scroll">
                     <img src ="images/lzlofi.png">
                     </div>
+                </div>
 
             </main>
             <main role="main" class="container">
@@ -158,10 +167,15 @@
                  </p>
 
                 </div>
+                <div class = "reveal">
                 <div class ="scroll">
                     <img src ="images/lzhifi.png">
                     </div>
+                </div>
+                <div class = "reveal">
                     <img src ="images/usertestresults.png" class="sketch" alt="userflow sketch">
+                </div>
+                <div class = "reveal">
                     <div class = "rowlz">
                         <div class = "columnlz">
                             <img src = "images/blueicon.png" class= "icons">
@@ -190,6 +204,7 @@
                     </div>
                     </div>
                 </div>
+            </div>
 
 
                 <!-- <img src ="images/userflow.png" class="sketch" alt="userflow">
@@ -232,5 +247,8 @@
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/scroll.js"></script>
+        <script>
+        ScrollReveal().reveal('.reveal');
+        </script>
     </body>
 </html>

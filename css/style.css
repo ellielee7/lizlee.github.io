@@ -528,43 +528,71 @@ a:active{
     margin-top: 100px;
 }
 .mainimage img{
+    width: 70%;
+    /*margin-left: 50px;
+    margin-top: 50px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.mainimage1 img{
     width: 50%;
-    margin-left: 50px;
-    margin-top: 50px;
+    /*margin-left: 50px;
+    margin-top: 50px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
 }
 .summary h1 span{
     font-weight: bold;
     color: #FED933;
 }
 .summary h1{
-    line-height: 1;
+    /*line-height: 1;
     width: 30%;
     text-align: left;
     position: absolute;
     right: 50px;
-    top: 280px;
+    top: 280px;*/
+    width: 70%
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 
 }
 .maintitle h1{
-    width: 30%;
+    /*width: 30%;
     text-align: left;
-    position: absolute;
-    right: 50px;
-    top: 220px;
+    position: absolute;*/
+    /*right: 50px;
+    top: 220px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    text-align: center;
     font-size: 32px;
     font-family: 'Khula', sans-serif;
 
 }
 .summary1 h1{
-    line-height: 1;
+    /*line-height: 1;
     width: 20%;
     text-align: left;
     position: absolute;
     right: 175px;
-    top: 280px;
+    top: 280px;*/
+    width: 70%
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -576,11 +604,11 @@ a:active{
 }
 .summary2 h1{
     line-height: 1;
-    width: 20%;
-    text-align: left;
-    position: absolute;
-    right: 175px;
-    top: 280px;
+    width: 70%;
+    text-align: center;
+    position: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -593,11 +621,11 @@ a:active{
 
 .summary4 h1{
     line-height: 1;
-    width: 30%;
-    text-align: left;
-    position: absolute;
-    right: 50px;
-    top: 280px;
+    width: 70%;
+    text-align: center;
+    position: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;

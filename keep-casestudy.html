@@ -15,6 +15,9 @@
 
     <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>ScrollReveal({ reset: true }{ delay: 500 });</script>
+    </head>
     </head>
     <body>
         <header>
@@ -38,11 +41,16 @@
         </header>
         <!-- <div class = "cstitle"><h1 class="casestudytitle">Keep</h1> -->
         </div>
+        <div class ="reveal">
         <div class = "wrapper">
-            <div class = "mainimage"><img src="images/kip.png" class="work" alt="cheese block"></div>
+            <div class = "mainimage"><img src="images/keepipadnew.png" class="work" alt="cheese block"></div>
+            </div>
+            <div class ="reveal">
             <div class = "maintitle"><h1>Keep</h1></div>
             <div class = "summary2"><h1>A easier way to <span>keep</span>, share and collaborate.</h1></div>
         </div>
+    </div>
+
         <div id ="content">
             <main role="main" class="container">
                 <h2 class="lines" id = "about">
@@ -83,6 +91,7 @@
                     <p>I wanted to see what users current behaviors were and how Keep would fit into their daily life. In order to do that, I needed to find out more information such as their home and work life as well as what their habits are on the internet.</p>
                 </div>
                 <!-- <img src="images/keeppersona.png" class="personas" alt="persona"> -->
+                <div class ="reveal">
                 <div class = "row">
                     <div class = "column">
                         <img src = "images/brianm.png">
@@ -114,6 +123,7 @@
                                     <li>To communicate with vendors and clients in a professional and simple way</li>
                                 </ul>
                             </div>
+                        </div>
                 </div>
                 </main>
             </main>
@@ -130,9 +140,9 @@
                     <p>Focusing on the two groups, new and returning users, I was able to create a user flow for the best possible way to show how a user would use the website. For example, how would a first time user sign up, and  what is needed for that first time user to sign up efficiently.</p>
 
                 </div>
-
+                <div class ="reveal">
                 <img src ="images/keepuserflowsketch.png" class="sketch" alt="userflow">
-
+            </div>
             </main>
                 <main role="main" class="container">
                     <h2 class="lines" id= "wf">
@@ -146,8 +156,10 @@
                 </div>
                 <div class ="hide">
                     <!-- <img src ="images/wfsketch.png" class="sketch" alt="userflow"> -->
+                    <div class ="reveal">
                     <img src ="images/keepwireframe.png" class="sketch" alt="userflow">
                 </div>
+            </div>
             </main>
             <main role="main" class="container">
                 <h2 class="lines" id= "mu">
@@ -164,15 +176,19 @@
             </div>
             <a href="https://invis.io/AEHGGX48DGQ" target="_blank" class="surveybtn">View Prototype</a>
                 <div class = "hide">
+                    <div class = "reveal">
                 <img src ="images/keephomepage.png" class="sketch" alt="prototype">
                 <!-- <img src ="images/keepmockup.png" class="sketch" alt="prototype"> -->
                 </div>
+                </div>
                 <p><i>keep mockups</i></p>
+                <div class ="reveal">
                 <video width="500" height="auto" controls>
                   <source src="images/keepprototypevideo.mov" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
                     <p><i>keep prototype video</i></p>
+                    </div>
             </main>
             <main role="main" class="container">
                 <h2 class="lines" id="conclusion">
@@ -218,4 +234,7 @@
     </body>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/scroll.js"></script>
+    <script>
+    ScrollReveal().reveal('.reveal');
+    </script>
 </html>
